@@ -1,0 +1,21 @@
+server:
+  http_listen_port: 3200
+
+distributor:
+  receivers:                           # this section will list the receivers that can be used to receive spans
+    otlp:
+      protocols:
+        http:
+        grpc:
+
+ingester:
+  trace_idle_period: 10s               # the amount of time to wait before flushing a trace after it was last updated
+  max_block_duration: 5m               # cut the headblock when this much time passes
+
+storage:
+  trace:
+    backend: local                     # backend configuration to use local disk
+    wal:
+      path: /tmp/tempo/wal             # where to store the the write ahead log locally
+    local:
+      path: /tmp/tempo/blocks          # where to store the blocks locally

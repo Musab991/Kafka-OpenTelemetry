@@ -1,0 +1,8 @@
+# Ignore Kafka Broker Data Volumes
+kafka1/data/
+kafka2/data/
+kafka3/data/
+
+# Ignore .NET compiled binaries
+bin/
+obj/
