@@ -1,0 +1,16 @@
+# ==========================================
+# AVL System - Deep Health Checks
+# ==========================================
+
+// 1. Check Overspeed Alert Consumer
+GET http://localhost:5000/health
+
+###
+
+// 2. Check Real-Time Tracker Consumer
+GET http://localhost:5001/health
+
+###
+
+// 3. Check AVL Sensor Producer
+GET http://localhost:5002/health
