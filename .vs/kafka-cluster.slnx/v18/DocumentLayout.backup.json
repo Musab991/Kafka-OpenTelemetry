@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\kafka-cluster\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\kafka-cluster\\src\\RealTimeTrackerMonitor\\Background\\ConsumerWorker.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\RealTimeTrackerMonitor\\Background\\ConsumerWorker.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\kafka-cluster\\src\\RealTimeTrackerMonitor\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\RealTimeTrackerMonitor\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\kafka-cluster\\src\\RealTimeTrackerMonitor\\RealTimeTrackerMonitor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\RealTimeTrackerMonitor\\RealTimeTrackerMonitor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\kafka-cluster\\src\\RealTimeTrackerMonitor\\Background\\ConsumerWorker.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\RealTimeTrackerMonitor\\Background\\ConsumerWorker.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\kafka-cluster\\src\\RealTimeTrackerMonitor\\Models\\AvlRecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,10 +31,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\AvlSensorProducer\\AvlSensorProducer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\kafka-cluster\\src\\RealTimeTrackerMonitor\\RealTimeTrackerMonitor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\RealTimeTrackerMonitor\\RealTimeTrackerMonitor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\kafka-cluster\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
     },
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 20,
           "Children": [
             {
               "$type": "Bookmark",
@@ -118,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AvlRecord.cs",
               "DocumentMoniker": "D:\\kafka-cluster\\src\\RealTimeTrackerMonitor\\Models\\AvlRecord.cs",
               "RelativeDocumentMoniker": "src\\RealTimeTrackerMonitor\\Models\\AvlRecord.cs",
@@ -131,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ConsumerWorker.cs",
               "DocumentMoniker": "D:\\kafka-cluster\\src\\RealTimeTrackerMonitor\\Background\\ConsumerWorker.cs",
               "RelativeDocumentMoniker": "src\\RealTimeTrackerMonitor\\Background\\ConsumerWorker.cs",
@@ -144,26 +144,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "RealTimeTrackerMonitor.csproj",
               "DocumentMoniker": "D:\\kafka-cluster\\src\\RealTimeTrackerMonitor\\RealTimeTrackerMonitor.csproj",
               "RelativeDocumentMoniker": "src\\RealTimeTrackerMonitor\\RealTimeTrackerMonitor.csproj",
               "ToolTip": "D:\\kafka-cluster\\src\\RealTimeTrackerMonitor\\RealTimeTrackerMonitor.csproj",
               "RelativeToolTip": "src\\RealTimeTrackerMonitor\\RealTimeTrackerMonitor.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-04-20T04:45:33.17Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\kafka-cluster\\src\\RealTimeTrackerMonitor\\Program.cs",
               "RelativeDocumentMoniker": "src\\RealTimeTrackerMonitor\\Program.cs",
               "ToolTip": "D:\\kafka-cluster\\src\\RealTimeTrackerMonitor\\Program.cs",
               "RelativeToolTip": "src\\RealTimeTrackerMonitor\\Program.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAACwAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAADEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-20T04:45:17.545Z",
               "EditorCaption": ""
@@ -183,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\kafka-cluster\\src\\OverspeedAlertMonitor\\Program.cs",
               "RelativeDocumentMoniker": "src\\OverspeedAlertMonitor\\Program.cs",
@@ -209,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AvlSensorProducer.csproj",
               "DocumentMoniker": "D:\\kafka-cluster\\src\\AvlSensorProducer\\AvlSensorProducer.csproj",
               "RelativeDocumentMoniker": "src\\AvlSensorProducer\\AvlSensorProducer.csproj",
@@ -222,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\kafka-cluster\\src\\AvlSensorProducer\\Program.cs",
               "RelativeDocumentMoniker": "src\\AvlSensorProducer\\Program.cs",

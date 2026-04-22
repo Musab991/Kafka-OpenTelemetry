@@ -65,7 +65,25 @@ namespace OverspeedAlertMonitor
 
                 var app = builder.Build();
 
-                app.MapHealthChecks("/health");
+
+                app.MapHealthChecks("/health", new Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions
+                {
+                    ResponseWriter = async (context, report) =>
+                    {
+                        context.Response.ContentType = "application/json";
+                        var response = new
+                        {
+                            Status = report.Status.ToString(),
+                            Checks = report.Entries.Select(e => new
+                            {
+                                Component = e.Key,
+                                Status = e.Value.Status.ToString(),
+                                Error = e.Value.Exception?.Message ?? e.Value.Description
+                            })
+                        };
+                        await JsonSerializer.SerializeAsync(context.Response.Body, response);
+                    }
+                });
                 await app.RunAsync();
 
             }

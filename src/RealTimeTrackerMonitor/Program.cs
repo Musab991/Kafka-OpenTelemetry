@@ -2,7 +2,7 @@ using OpenTelemetry.Metrics;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using Serilog;
-
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 namespace RealTimeTrackerMonitor
 {
 
@@ -65,7 +65,26 @@ namespace RealTimeTrackerMonitor
                 var app = builder.Build();
 
                 // 4. Expose the /health URL
-                app.MapHealthChecks("/health");
+                app.MapHealthChecks("/health", new  HealthCheckOptions
+                {
+                    ResponseWriter = async (context, report) =>
+                    {
+                        context.Response.ContentType = "application/json";
+                        var response = new
+                        {
+                            Status = report.Status.ToString(),
+                            Checks = report.Entries.Select(e => new
+                            {
+                                Component = e.Key,
+                                Status = e.Value.Status.ToString(),
+                                Error = e.Value.Exception?.Message ?? e.Value.Description
+                            })
+                        };
+                        await JsonSerializer.SerializeAsync(context.Response.Body, response);
+                    }
+                });
+
+
                 await app.RunAsync();
             }
             catch (Exception ex)

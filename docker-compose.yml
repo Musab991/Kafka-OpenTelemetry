@@ -108,7 +108,9 @@ services:
     environment:
       - KAFKA_BOOTSTRAP_SERVER=kafka1:9092,kafka2:9092,kafka3:9092
       - SEQ_URL=http://seq:5341
-      - OTEL_EXPORTER_OTLP_ENDPOINT=http://tempo:4317
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://tempo:4317   
+    ports:
+      - "5000:8080" 
     depends_on:
       - kafka1
       - kafka2
@@ -118,7 +120,7 @@ services:
     networks:
       - kafka-net
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
       interval: 30s
       timeout: 10s
       retries: 5
@@ -131,6 +133,8 @@ services:
       - KAFKA_BOOTSTRAP_SERVER=kafka1:9092,kafka2:9092,kafka3:9092
       - SEQ_URL=http://seq:5341
       - OTEL_EXPORTER_OTLP_ENDPOINT=http://tempo:4317
+    ports:
+      - "5001:8080" 
     depends_on:
       - kafka1
       - kafka2
@@ -140,7 +144,7 @@ services:
     networks:
       - kafka-net
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
       interval: 30s
       timeout: 10s
       retries: 5
@@ -153,6 +157,8 @@ services:
       - KAFKA_BOOTSTRAP_SERVER=kafka1:9092,kafka2:9092,kafka3:9092
       - SEQ_URL=http://seq:5341
       - OTEL_EXPORTER_OTLP_ENDPOINT=http://tempo:4317
+    ports:
+      - "5002:8080" 
     depends_on:
       - kafka1
       - kafka2
@@ -162,7 +168,7 @@ services:
     networks:
       - kafka-net
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
       interval: 30s
       timeout: 10s
       retries: 5
