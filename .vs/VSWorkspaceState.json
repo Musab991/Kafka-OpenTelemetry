@@ -1,8 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\src",
     "\\src\\AvlSensorProducer",
-    "\\src\\OverspeedAlertMonitor"
+    "\\src\\OverspeedAlertMonitor",
+    "\\src\\RealTimeTrackerMonitor",
+    "\\src\\RealTimeTrackerMonitor\\Background",
+    "\\src\\RealTimeTrackerMonitor\\Models"
   ],
+  "SelectedNode": "\\src\\RealTimeTrackerMonitor\\RealTimeTrackerMonitor.csproj",
   "PreviewInSolutionExplorer": false
 }

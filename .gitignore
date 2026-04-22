@@ -6,3 +6,5 @@ kafka3/data/
 # Ignore .NET compiled binaries
 bin/
 obj/
+
+.vs
