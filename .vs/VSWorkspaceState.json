@@ -1,13 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\kafka1",
+    "\\kafka3",
     "\\src",
     "\\src\\AvlSensorProducer",
-    "\\src\\OverspeedAlertMonitor",
-    "\\src\\RealTimeTrackerMonitor",
+    "\\src\\AvlSensorProducer\\Background",
+    "\\src\\AvlSensorProducer\\Models",
+    "\\src\\AvlSensorProducer\\Properties",
     "\\src\\RealTimeTrackerMonitor\\Background",
     "\\src\\RealTimeTrackerMonitor\\Models"
   ],
-  "SelectedNode": "\\src\\RealTimeTrackerMonitor\\RealTimeTrackerMonitor.csproj",
+  "SelectedNode": "\\kafka-cluster.sln",
   "PreviewInSolutionExplorer": false
 }

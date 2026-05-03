@@ -3,6 +3,7 @@ using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using Serilog;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using System.Text.Json;
 namespace RealTimeTrackerMonitor
 {
 

@@ -1,9 +1,9 @@
 using AvlSensorProducer.Background;
-using OpenTelemetry;
 using OpenTelemetry.Metrics;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using Serilog;
+using System.Text.Json;
 
 namespace AvlSensorProducer
 {

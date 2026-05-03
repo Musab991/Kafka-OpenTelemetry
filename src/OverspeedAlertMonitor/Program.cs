@@ -3,6 +3,7 @@ using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using OverspeedAlertMonitor.Background;
 using Serilog;
+using System.Text.Json;
 
 namespace OverspeedAlertMonitor
 {
